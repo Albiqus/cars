@@ -1,8 +1,9 @@
+import { vehicles } from './reducers/vehicles';
 import { createStore, combineReducers } from "redux";
 
 
 let reducers = combineReducers({
-
+    vehicles,
 })
 
 let store = createStore(reducers)
