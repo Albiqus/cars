@@ -14,7 +14,7 @@ export const Gradation = () => {
     return (
         <Div>
             <SelectWrapper>
-                <Select onChange={onSortingChange}>сортировать по
+                <Select onChange={onSortingChange}>
                     <Option  value='increase'>по возрастанию</Option>
                     <Option  value='decrease'>по убыванию</Option>
                 </Select>

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 
 export const Div = styled.div`
-width: 190px;
+width: 230px;
 `
 
 export const Select = styled.select`
-width: 150px;
+width: 200px;
 height: 40px;
 appearance: none;
 -moz-appearance: none;
@@ -35,7 +35,7 @@ position: relative;
     content: '';
     position: absolute;
     bottom: 14px;
-    right: 20px;
+    right: -5px;
     transform: translate(-50%);
     display: block;
     width: 20px;

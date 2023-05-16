@@ -15,7 +15,7 @@ export const Sorting = () => {
         <Div>
             <SelectWrapper>
                 <Select onChange={onSortingChange}>
-                    <Option value='all'>все</Option>
+                    <Option value='all'>без сортировки</Option>
                     <Option value='year'>год</Option>
                     <Option value='price'>цена</Option>
                 </Select>
