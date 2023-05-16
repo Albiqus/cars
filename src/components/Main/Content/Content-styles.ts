@@ -23,7 +23,7 @@ flex-direction: column;
 align-items: center;
 `
 
-export const H1 = styled.h1`
+export const Name = styled.h1`
 margin: 0;
 margin-top: 15px;
 font-size: 17px;
@@ -35,7 +35,7 @@ export const Description = styled.div`
 margin-top: 15px;
 `
 
-export const P = styled.p`
+export const Year = styled.p`
 margin: 0;
 font-size: 17px;
 font-family: custom;
@@ -43,6 +43,12 @@ font-family: custom;
 
 export const ColorWrapper = styled.div`
 display: flex;
+`
+
+export const ColorName = styled.p`
+margin: 0;
+font-size: 17px;
+font-family: custom;
 `
 
 export const Color = styled.div`

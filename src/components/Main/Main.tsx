@@ -3,7 +3,7 @@ import { Content } from "./Content/Content";
 import { Div } from "./Main-styles"
 import { useEffect, } from 'react';
 import { useDispatch } from 'react-redux'
-import { Sorting } from "./Sorting/Sorting";
+import { SortingPanel } from "./SortingPanel/SortingPanel";
 
 
 export const Main = () => {
@@ -16,7 +16,7 @@ export const Main = () => {
 
     return (
         <Div>
-            <Sorting/>
+            <SortingPanel />
             <Content/>
         </Div>
     )

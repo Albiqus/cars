@@ -5,7 +5,7 @@ const startState = {
     vehicles: null,
 }
 
-export const vehicles = (state = startState, action: any) => {
+export const content = (state = startState, action: any) => {
     switch (action.type) {
         case SET_VEHICLES: {
             return {

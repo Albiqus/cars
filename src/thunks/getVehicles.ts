@@ -1,5 +1,5 @@
 import axios from "axios"
-import { setVehicles } from "../actionCreators/setVehicles"
+import { setVehicles } from "../actionCreators/content/setVehicles"
 
 
 export const getVehicles = (dispatch: any) => {

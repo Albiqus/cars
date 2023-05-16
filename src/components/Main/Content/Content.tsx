@@ -1,19 +1,26 @@
 import { RootState } from "../../../store/store";
-import { Color, Description, Div, H1, P, VehicleItem, ColorWrapper, Price } from "./Content-styles"
+import { Color, Description, Div, Name, Year, VehicleItem, ColorWrapper, Price, ColorName } from "./Content-styles"
 import { useSelector } from 'react-redux'
+import { sortVehicles } from "../../../utils/sortVehicles";
+
 
 export const Content = () => {
 
-    const { vehicles } = useSelector((state: RootState) => state.vehicles);
-    console.log(vehicles)
+    let { vehicles } = useSelector((state: RootState) => state.content);
+    const { sortMode, gradation } = useSelector((state: RootState) => state.sorting);
+    
+    if (vehicles) {
+        vehicles = sortVehicles(vehicles, sortMode, gradation)
+    }
+
     const vehicleItems = vehicles?.map((vehicle: any) => {
         return (
             <VehicleItem key={vehicle.id}>
-                <H1>{vehicle.name} {vehicle.model}</H1>
+                <Name>{vehicle.name} {vehicle.model}</Name>
                 <Description>
-                    <P>год: {vehicle.year}</P>
+                    <Year>год: {vehicle.year}</Year>
                     <ColorWrapper>
-                        <P>цвет: {vehicle.color}</P>
+                        <ColorName>цвет: {vehicle.color}</ColorName>
                         <Color color={vehicle.color} />
                     </ColorWrapper>
                 </Description>
@@ -21,6 +28,7 @@ export const Content = () => {
             </VehicleItem>
         )
     })
+
 
     return (
         <Div>

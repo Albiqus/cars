@@ -1,1 +1,3 @@
 export const SET_VEHICLES = 'SET_VEHICLES'
+export const SET_SORT_MODE = 'SET_SORT_MODE'
+export const SET_GRADATION = 'SET_GRADATION'

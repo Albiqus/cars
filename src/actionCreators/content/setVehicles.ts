@@ -1,4 +1,4 @@
-import { SET_VEHICLES } from "../data/actionTypes"
+import { SET_VEHICLES } from "../../data/actionTypes"
 
 
 export const setVehicles = (vehicles: any) => {
