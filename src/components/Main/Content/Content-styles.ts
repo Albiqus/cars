@@ -9,10 +9,11 @@ export const Div = styled.div`
 height: auto;
 width: 1000px;
 padding-bottom: 40px;
-background-color: rgb(71, 71, 71);
+background-color: rgb(255,255,255);
 display: flex;
 flex-wrap: wrap;
 align-content: space-between;
+border-radius: 0px 0px 20px 20px;
 `
 
 const EditingPanelAppearance = keyframes`
@@ -34,6 +35,7 @@ const ButtonAppearance = keyframes`
     opacity: 1;
   }
 `
+
 
 export const AcceptButton = styled.button`
 opacity: 0;
@@ -85,7 +87,7 @@ bottom: 200px;
 width: 200px;
 height: 0px;
 border-radius: 10px 10px 0 0;
-background-color: rgb(117, 111, 111);
+background-color: rgb(210, 210, 210);
 `
 
 export const VehicleItem = styled.div`
@@ -94,11 +96,11 @@ margin-top: 40px;
 margin-left: 40px;
 height: 200px;
 width: 200px;
-background-color: rgb(117, 111, 111);
+background-color: rgb(210, 210, 210);
 display: flex;
 flex-direction: column;
 align-items: center;
-border-radius: 0px 0px 10px 10px;
+border-radius: 10px 10px 10px 10px;
 &:hover ${EditingPanel} {
     animation: ${EditingPanelAppearance} forwards 0.5s;
 }
@@ -113,6 +115,7 @@ border-radius: 0px 0px 10px 10px;
 }
 &:hover{
     cursor: default;
+    border-radius: 0px 0px 10px 10px;
 }
 `
 
@@ -134,7 +137,7 @@ width: auto;
 border: none;
 outline: none;
 max-width: 180px;
-background-color: rgb(71, 71, 71);
+background-color: white;
 box-sizing: border-box;
 `
 
@@ -158,13 +161,12 @@ height: 21px;
 border: none;
 outline: none;
 max-width: 180px;
-background-color: rgb(71, 71, 71);
+background-color: white;
 `
 
 export const Year = styled.p`
 margin: 0;
 font-size: 17px;
-font-family: custom;
 `
 
 export const Location = styled.p`
@@ -185,7 +187,6 @@ display: flex;
 export const ColorName = styled.p`
 margin: 0;
 font-size: 17px;
-font-family: custom;
 `
 
 export const Color = styled.div`
@@ -214,6 +215,6 @@ width: auto;
 border: none;
 outline: none;
 max-width: 180px;
-background-color: rgb(71, 71, 71);
+background-color: white;
 `
 
