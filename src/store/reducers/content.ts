@@ -1,4 +1,5 @@
 import { CHANGE_VEHICLE, DELETE_VEHICLE, SET_VEHICLES } from "../../data/actionTypes";
+import { Vehicle } from "../../types/Vehicle";
 
 
 const startState = {
@@ -14,7 +15,7 @@ export const content = (state = startState, action: any) => {
             }
         }
         case CHANGE_VEHICLE: {
-            const newVehickes = [...state.vehicles].map((vehicle: any) => {
+            const newVehickes = [...state.vehicles].map((vehicle: Vehicle) => {
                 if (vehicle.id !== action.payload.id) return vehicle
                 return {
                     ...vehicle,
@@ -31,7 +32,7 @@ export const content = (state = startState, action: any) => {
         case DELETE_VEHICLE: {
             return {
                 ...state,
-                vehicles: state.vehicles.filter((vehicle: any) => vehicle.id !== action.payload)
+                vehicles: state.vehicles.filter((vehicle: Vehicle) => vehicle.id !== action.payload)
             }
         }
         default:

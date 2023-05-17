@@ -7,8 +7,8 @@ export const Gradation = () => {
 
     const dispatch = useDispatch()
 
-    const onSortingChange = (e: any) => {
-        dispatch(setGradation(e.target.value))
+    const onSortingChange = (e: React.ChangeEvent) => {
+        dispatch(setGradation((e.target as HTMLInputElement).value))
     }
 
     return (

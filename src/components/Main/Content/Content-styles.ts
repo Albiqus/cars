@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { ColorProps } from "../../../types/props/Color";
+import { ColorProps } from "../../../types/props/ColorProps";
 import deleteIcon from '../../../images/delete.png'
 import editIcon from '../../../images/edit.png'
 import acceptIcon from '../../../images/accept.png'
@@ -167,6 +167,17 @@ font-size: 17px;
 font-family: custom;
 `
 
+export const Location = styled.p`
+margin: 0;
+margin-top: 6px;
+font-size: 17px;
+font-family: custom;
+text-decoration: underline;
+&:hover{
+    cursor: pointer;
+}
+`
+
 export const ColorWrapper = styled.div`
 display: flex;
 `
@@ -188,7 +199,7 @@ border-radius: 50px;
 
 export const Price = styled.h1`
 margin: 0;
-margin-top: 20px;
+margin-top: 14px;
 font-size: 25px;
 text-align: center;
 font-family: custom_bold;
@@ -198,7 +209,7 @@ export const PriceInput = styled.input`
 font-size: 25px;
 text-align: center;
 font-family: custom_bold;
-margin-top: 19px;
+margin-top: 13px;
 width: auto;
 border: none;
 outline: none;

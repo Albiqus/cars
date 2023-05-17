@@ -7,8 +7,8 @@ export const Sorting = () => {
 
     const dispatch = useDispatch()
 
-    const onSortingChange = (e: any) => {
-        dispatch(setSortMode(e.target.value))
+    const onSortingChange = (e: React.ChangeEvent) => {
+        dispatch(setSortMode((e.target as HTMLInputElement).value))
     }
 
     return (

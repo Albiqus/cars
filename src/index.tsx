@@ -5,17 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import { YMaps } from '@pbe/react-yandex-maps';
+
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 
 root.render(
-
-    <Provider store={store}>
-        <App />
-    </Provider>
-
+    <YMaps>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </YMaps>
 );
 
 // If you want to start measuring performance in your app, pass a function
