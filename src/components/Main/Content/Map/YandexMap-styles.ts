@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import deleteIcon from '../../../images/delete.png'
+import deleteIcon from '../../../../images/delete.png'
 
 
 export const Div = styled.div`

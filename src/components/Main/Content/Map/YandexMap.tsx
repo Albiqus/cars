@@ -1,7 +1,7 @@
 
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 import { CloseButton, Div } from './YandexMap-styles';
-import { YandexMapProps } from '../../../types/props/YandexMapProps';
+import { YandexMapProps } from '../../../../types/props/YandexMapProps';
 
 
 export const YandexMap = ({ latitude, longitude, onCloseClick }: YandexMapProps) => {

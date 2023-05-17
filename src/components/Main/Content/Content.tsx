@@ -5,8 +5,8 @@ import { sortVehicles } from "../../../utils/sortVehicles";
 import { useState } from "react";
 import { changeVehicle } from "../../../actionCreators/content/changeVehicle";
 import { deleteVehicle } from "../../../actionCreators/content/deleteVehicle";
-import { YandexMap } from "../Map/YandexMap";
 import { Vehicle } from "../../../types/Vehicle";
+import { YandexMap } from "./Map/YandexMap";
 
 
 export const Content = () => {
