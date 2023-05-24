@@ -1,9 +1,10 @@
 import { CHANGE_VEHICLE, DELETE_VEHICLE, SET_VEHICLES } from "../../data/actionTypes";
+import { vehicles } from "../../data/vehicles";
 import { Vehicle } from "../../types/Vehicle";
 
 
 const startState = {
-    vehicles: [],
+    vehicles: vehicles,
 }
 
 export const content = (state = startState, action: any) => {

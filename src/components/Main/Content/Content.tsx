@@ -65,7 +65,7 @@ export const Content = () => {
     const onCloseLocationClick = () => {
         setMapVehicleId(0)
     }
-
+    
     const vehicleItems = vehicles?.map((vehicle: any) => {
         return (
             <VehicleItem key={vehicle.id}>
